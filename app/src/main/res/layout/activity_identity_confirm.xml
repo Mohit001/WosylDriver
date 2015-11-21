@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/user_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/welcome_lbl"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimn14"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:background="@drawable/grey_lite_round_corner_solid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimn10"
+        android:layout_below="@id/welcome_lbl"
+        android:textSize="@dimen/dimn14"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:text="Username"
+        android:drawableLeft="@drawable/ic_user_back"
+        android:id="@+id/user_name_content"
+        android:layout_marginLeft="@dimen/dimn26"
+        android:layout_marginRight="@dimen/dimn26"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_name_content"
+        android:text="Not You?"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:id="@+id/notu_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginLeft="@dimen/dimn22"
+        android:layout_marginRight="@dimen/dimn22"
+        android:layout_marginBottom="@dimen/dimn14"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_round_corner_solid"
+        android:text="Go Online!"
+        android:id="@+id/go_online_btn"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <ImageView
+        android:src="@drawable/ic_user_back"
+        android:scaleType="center"
+        android:layout_above="@id/go_online_btn"
+        android:layout_below="@id/notu_lbl"
+        android:layout_margin="@dimen/dimn14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:id="@+id/drawer_layout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        android:id="@+id/user_home_actionbar"
+        android:layout_width="match_parent"
+        android:background="@color/user_background"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/left_menu"
+            android:src="@drawable/ic_user_back"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dimn14"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_user_back"/>
+
+
+    </RelativeLayout>
+    <FrameLayout
+android:layout_below="@id/user_home_actionbar"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- The navigation drawer -->
+
+</RelativeLayout>
+
