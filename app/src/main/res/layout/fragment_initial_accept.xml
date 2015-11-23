@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/user_background"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:background="@color/text_lite_grey"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_user_back"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/map_logo"
+        android:src="@drawable/ic_user_back"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/dimn18"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/order_id"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Order Id : 2"
+        android:layout_below="@id/map_logo"
+        android:layout_marginTop="@dimen/dimn10"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/dimn10"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/order_id"
+        android:text="New Order! - click to accept"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/accept_lbl"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/delivery_address_lbl_ll"
+        android:layout_marginLeft="@dimen/dimn22"
+        android:layout_marginRight="@dimen/dimn22"
+        android:layout_below="@id/accept_lbl"
+        android:layout_marginTop="@dimen/dimn10"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/blenk_lbl"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/pickup_lbl"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="Pickup"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/dropoff_lbl"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="dropoff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delivery_address_ll"
+        android:layout_marginLeft="@dimen/dimn22"
+        android:layout_marginRight="@dimen/dimn22"
+        android:layout_below="@id/delivery_address_lbl_ll"
+        android:layout_marginTop="@dimen/dimn10"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/you_lbl"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="You"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/pickup_address_lbl"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="Pickup Address"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/dropoff_address_lbl"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+
+            android:text="dropoff Address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/delivery_address_ll"
+        android:id="@+id/centerline_rl"
+        android:layout_marginLeft="@dimen/dimn18"
+        android:layout_marginRight="@dimen/dimn18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:background="@color/user_back_blue"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_user_back"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_user_back"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_user_back"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_details_ll"
+        android:orientation="horizontal"
+        android:layout_below="@id/centerline_rl"
+        android:layout_marginLeft="@dimen/dimn18"
+        android:layout_marginRight="@dimen/dimn18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_lite_round_corner_solid"
+        >
+
+        <LinearLayout
+            android:id="@+id/order_details_amount_ll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/order_details_amount_lbl"
+                android:textColor="@color/white"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_details_amount_content"
+                android:textColor="@color/white"
+                android:text="$10.00"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_details_distance_ll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@color/user_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/order_details_distance_content"
+                android:textColor="@color/white"
+                android:text="0.2Miles/3Min to Pickup"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_details_items_ll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="17dp"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/order_details_items_lbl"
+                android:textColor="@color/white"
+                android:text="Items"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_details_items_content"
+                android:textColor="@color/white"
+                android:text="5"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/base_price_lbl"
+        android:text="$6.00/base   +   $1.5/Mile"
+        android:textColor="@color/text_lite_grey"
+        android:layout_below="@id/order_details_ll"
+        android:textSize="10sp"
+        android:layout_marginTop="@dimen/dimn14"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

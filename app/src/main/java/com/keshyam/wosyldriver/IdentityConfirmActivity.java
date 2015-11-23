@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.keshyam.wosyldriver.util.Utility;
+import com.keshyam.wosyldriver.activity.MainActivity;
 
 /**
  * Created by Liger on 11/22/2015.
@@ -34,13 +34,16 @@ public class IdentityConfirmActivity extends Activity implements View.OnClickLis
         switch (v.getId())
         {
             case R.id.go_online_btn:
-                Utility.showAlertMessage(mContext, "Go online");
+//                Utility.showAlertMessage(mContext, "Go online");
+
+                startActivity(new Intent(this, MainActivity.class));
+                this.finish();
+
                 break;
             case R.id.notu_lbl:
-                Utility.showAlertMessage(mContext, "Not U");
+//                Utility.showAlertMessage(mContext, "Not U");
 
-                //do code to Logout in background
-
+                //do code to Logout in background and redirect to login screen
                 startActivity(new Intent(mContext, LoginActivity.class));
                 IdentityConfirmActivity.this.finish();
                 break;

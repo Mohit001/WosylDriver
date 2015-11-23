@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/user_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+              android:orientation="vertical"
+              android:background="@color/user_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/wosyl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimn10"
+        android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"/>
+
+    <ImageView
+        android:id="@+id/back_image_btn"
+        android:src="@drawable/ic_user_back"
+        android:layout_marginTop="@dimen/dimn18"
+        android:layout_marginLeft="@dimen/dimn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/orderid_content"
+        android:text="Order Id: 1"
+        android:layout_below="@id/wosyl_logo"
+        android:layout_marginTop="@dimen/dimn10"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:src="@drawable/ic_user_back"
+        android:scaleType="fitXY"
+        android:layout_below="@id/orderid_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/driver_name_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/profile_image"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/assign_driver_rating_lbl"
+        android:text="5.0"
+        android:drawableRight="@drawable/ic_user_back"
+        android:textColor="@color/white"
+        android:layout_below="@id/driver_name_content"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/flag_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_user_back"
+        android:layout_below="@id/assign_driver_rating_lbl"
+        android:layout_marginTop="@dimen/dimn10"/>
+
+    <TextView
+        android:id="@+id/dayof_week_content"
+        android:text="Placed on Friday,"
+        android:layout_below="@id/flag_icon"
+        android:layout_marginTop="@dimen/dimn10"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/custom_datetime_content"
+        android:text="Dcember 31, 2015 at 10:00 Am"
+        android:layout_below="@id/dayof_week_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/user_pending_address_details_ll"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/dimn18"
+        android:layout_below="@id/custom_datetime_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimn18"
+        android:layout_marginRight="@dimen/dimn18"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/user_pending_driver_status"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:text="Driver on Route"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/user_pending_details_pickup_address_conent"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:text="343 sutter st, san fransisco ca"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/user_pending_details_deliver_address_conent"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:text="150 berry st, san fransisco ca"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/user_pending_address_details_ll"
+        android:id="@+id/centerline_rl"
+        android:layout_marginLeft="@dimen/dimn18"
+        android:layout_marginRight="@dimen/dimn18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:background="@color/user_back_blue"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_user_back"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/ic_user_back"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ride_status"
+        android:text="Completed"
+        android:layout_below="@+id/centerline_rl"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/order_details_ll"
+        android:orientation="horizontal"
+        android:layout_below="@id/ride_status"
+        android:layout_marginLeft="@dimen/dimn18"
+        android:layout_marginRight="@dimen/dimn18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimn10"
+        android:background="@drawable/grey_lite_round_corner_solid">
+
+        <LinearLayout
+            android:id="@+id/order_details_amount_ll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/order_details_amount_lbl"
+                android:textColor="@color/white"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_details_amount_content"
+                android:textColor="@color/white"
+                android:text="$10.00"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_details_distance_ll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@color/user_background"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/order_details_distance_content"
+                android:textColor="@color/white"
+                android:text="0.2Miles/3Min to Pickup"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_details_items_ll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="17dp"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/order_details_items_lbl"
+                android:textColor="@color/white"
+                android:text="Items"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/order_details_items_content"
+                android:textColor="@color/white"
+                android:text="5"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/base_price_lbl"
+        android:text="$6.00/base   +   $1.5/Mile"
+        android:textColor="@color/text_lite_grey"
+        android:layout_below="@id/order_details_ll"
+        android:textSize="10sp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/review_btn"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/blue_round_corner_solid"
+        android:layout_below="@id/base_price_lbl"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:text="Review!"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/dimn22"
+        android:layout_marginRight="@dimen/dimn22"
+        android:layout_marginBottom="@dimen/dimn14"
+        android:layout_marginTop="@dimen/dimn14"/>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

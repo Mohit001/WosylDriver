@@ -1,4 +1,4 @@
-package com.keshyam.wosyldriver.home;
+package com.keshyam.wosyldriver.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,13 +10,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.keshyam.wosyldriver.R;
+import com.keshyam.wosyldriver.fragments.HistoryDateListFragment;
+import com.keshyam.wosyldriver.fragments.PendingMapFragment;
+import com.keshyam.wosyldriver.fragments.PendingListFragment;
 import com.keshyam.wosyldriver.util.Utility;
 
 import cn.tovi.CustomMenu;
 
-public class UserMainActivity extends Activity implements View.OnClickListener
+public class MainActivity extends Activity implements View.OnClickListener
 {
-    private static final String TAG = UserMainActivity.class.getSimpleName();
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     CustomMenu customMenu;
 
@@ -48,10 +51,10 @@ public class UserMainActivity extends Activity implements View.OnClickListener
         ((TextView) findViewById(R.id.setting_lbl)).setOnClickListener(this);
         ((TextView) findViewById(R.id.logout_lbl)).setOnClickListener(this);
 
-        /*getFragmentManager()
+        getFragmentManager()
                 .beginTransaction()
-                .replace(R.id.content_frame, new UserNewRideFragment(), UserNewRideFragment.TAG)
-                .commit();*/
+                .replace(R.id.content_frame, new PendingMapFragment(), PendingMapFragment.TAG)
+                .commit();
 
     }
 
@@ -68,32 +71,23 @@ public class UserMainActivity extends Activity implements View.OnClickListener
 
             case R.id.home_lbl:
 //                Utility.showAlertMessage(this, "home click");
-                /*if(getFragmentManager().findFragmentByTag(UserNewRideFragment.TAG) == null)
+                if(getFragmentManager().findFragmentByTag(PendingListFragment.TAG) == null)
                 {
 
                     getFragmentManager()
                             .beginTransaction()
-                            .replace(R.id.content_frame, new UserNewRideFragment(), UserNewRideFragment.TAG)
+                            .replace(R.id.content_frame, new PendingListFragment(), PendingListFragment.TAG)
                             .commit();
                 }
-                customMenu.closeMenu();*/
-                break;
-            case R.id.pending_lbl:
-//                Utility.showAlertMessage(this, "pending click");
-                /*getFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.content_frame, new PendingListFragment(), PendingListFragment.TAG)
-                        .commit();*/
                 customMenu.closeMenu();
                 break;
-
             case R.id.complected_lbl:
 //                Utility.showAlertMessage(this, "pending click");
-                /*getFragmentManager()
+                getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.content_frame, new HistoryDateListFragment(), HistoryDateListFragment.TAG)
                         .commit();
-                customMenu.closeMenu();*/
+                customMenu.closeMenu();
                 break;
 
             case R.id.setting_lbl:
